@@ -1,0 +1,9 @@
+{
+  "name": "spmos-official-information",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Verification tools for the SPMOS official public information repository.",
+  "scripts": {
+    "verify": "node scripts/verify.mjs"
+  }
+}

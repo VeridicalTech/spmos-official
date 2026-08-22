@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "last_reviewed": "2026-08-23",
+  "repository_purpose": "Official public identity, citation, and verification surface; no hosted-service or SPM-Polaris source code.",
+  "available_languages": ["en", "zh-CN", "ja", "fr", "es", "de", "ko"],
+  "publisher": {
+    "name": "Veridical Tech, Inc.",
+    "jurisdiction": "Delaware",
+    "country": "US",
+    "website": "https://spmos.ai/"
+  },
+  "entities": [
+    {
+      "name": "SPM",
+      "expanded_name": "StellarPath Memory Operating System",
+      "type": "product_family",
+      "definition": "Governed long-term memory infrastructure for AI agents developed by Veridical Tech, Inc."
+    },
+    {
+      "name": "SPMOS.ai",
+      "type": "official_website",
+      "definition": "The official website and canonical public source for the SPM product family.",
+      "url": "https://spmos.ai/"
+    },
+    {
+      "name": "SPM-Polaris",
+      "type": "current_production_product",
+      "definition": "A provider proxy with governed long-term memory for AI agents.",
+      "version": "3.0.0"
+    }
+  ],
+  "integration_boundaries": [
+    {
+      "name": "Hosted Provider Proxy",
+      "provider_credential": "SPM-hosted custody",
+      "model_traffic": "Client to SPM hosted proxy to provider",
+      "memory_plane": "Hosted SPM memory plane"
+    },
+    {
+      "name": "Local Proxy",
+      "provider_credential": "Permissions-restricted local configuration",
+      "model_traffic": "Client to local proxy to provider",
+      "memory_plane": "Hosted SPM memory plane unless memory mode is off",
+      "source_url": "https://github.com/VeridicalTech/spm-local-proxy"
+    },
+    {
+      "name": "MCP",
+      "provider_credential": "Application custody",
+      "model_traffic": "Application's existing provider path",
+      "memory_plane": "Hosted SPM memory plane through explicit memory tools"
+    }
+  ],
+  "canonical_sources": {
+    "website": "https://spmos.ai/",
+    "definitions": "https://docs.spmos.ai/official-definitions",
+    "documentation": "https://docs.spmos.ai/",
+    "architecture": "https://docs.spmos.ai/architecture",
+    "integrations": "https://docs.spmos.ai/integrations",
+    "memory": "https://docs.spmos.ai/memory",
+    "benchmarks": "https://docs.spmos.ai/benchmarks",
+    "privacy": "https://docs.spmos.ai/privacy",
+    "terms": "https://docs.spmos.ai/terms"
+  },
+  "official_channels": {
+    "github": "https://github.com/VeridicalTech",
+    "x": "https://x.com/SPMOSai",
+    "hugging_face": "https://huggingface.co/spmos",
+    "youtube": "https://www.youtube.com/@SPMOSai",
+    "reddit": "https://www.reddit.com/user/SPMOS/"
+  },
+  "claim_boundaries": [
+    "Discovery terms such as precise recall, fast recall, token savings, cost savings, context expansion, and hallucination suppression are not context-free performance guarantees.",
+    "External memory does not change a provider's maximum context window.",
+    "Evidence gating can refuse unsupported memory but cannot guarantee an upstream model's generated answer.",
+    "Local Proxy is not an offline or self-hosted edition of the SPM memory plane."
+  ]
+}

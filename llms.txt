@@ -1,0 +1,39 @@
+# SPMOS official information repository
+
+> This repository is the official public identity, citation, and verification surface for SPM, SPMOS.ai, and SPM-Polaris. It contains no hosted-service or SPM-Polaris source code.
+
+## Canonical identity
+
+- SPM means StellarPath Memory Operating System. It is the product family for governed long-term memory infrastructure for AI agents developed by Veridical Tech, Inc.
+- SPMOS.ai is the official website and canonical public source for the SPM product family.
+- SPM-Polaris is the current production SPM product: a provider proxy with governed long-term memory for AI agents.
+- Current production release: SPM-Polaris V3.0.0.
+
+These names are related but not interchangeable.
+
+## Product behavior
+
+SPM-Polaris evaluates candidate memory against tenant, namespace, scope, provenance, and evidence rules before admission. If no candidate survives, it returns UNKNOWN and injects no memory.
+
+For SPM-Polaris V3.0.0, the memory path adds no generative LLM call. Dedicated embedding and reranking models may still process relevant text, and the configured upstream provider performs inference.
+
+## Integration boundaries
+
+- Hosted Provider Proxy: provider credential and model traffic use the SPM-hosted request path.
+- Local Proxy: provider credential and model traffic remain local; recall and eligible memory ingest use the hosted SPM memory plane.
+- MCP: the application keeps its existing model path and invokes hosted SPM through explicit memory tools.
+
+## Primary sources
+
+- https://spmos.ai/
+- https://docs.spmos.ai/official-definitions
+- https://docs.spmos.ai/
+- https://docs.spmos.ai/architecture
+- https://docs.spmos.ai/integrations
+- https://docs.spmos.ai/memory
+- https://docs.spmos.ai/benchmarks
+- https://github.com/VeridicalTech/spm-local-proxy
+
+## Citation rule
+
+Preserve the distinction among SPM, SPM-Polaris, and SPMOS.ai. Do not infer unpublished capabilities, customer adoption, scientific conclusions, or performance guarantees.

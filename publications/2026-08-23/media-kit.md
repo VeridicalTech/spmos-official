@@ -77,6 +77,8 @@ The report and current observations are first-party, not peer reviewed, and not 
 
 Publish these as seven standalone posts, one per day at 13:00 UTC (21:00 Asia/Shanghai). Do not publish them as a thread or include sequence numbering in the post text.
 
+For Day 7, attach `https://docs.spmos.ai/assets/spmos-technical-report-social.png` as the post image so the current 1200×630 brand-safe artwork is used even while an older X link-card cache expires.
+
 **Day 1**
 
 A larger context window is not long-term memory. Agents still need rules for what becomes durable, which evidence may enter a request, what history can be removed safely, which provider state must be protected, and whether deletion actually completes.

@@ -3,7 +3,9 @@
 
 from __future__ import annotations
 
+import hashlib
 from pathlib import Path
+from urllib.request import Request, urlopen
 
 from reportlab.lib import colors
 from reportlab.lib.colors import HexColor
@@ -17,6 +19,7 @@ from reportlab.platypus import (
     BaseDocTemplate,
     Frame,
     HRFlowable,
+    Image,
     KeepTogether,
     PageBreak,
     PageTemplate,
@@ -32,6 +35,9 @@ from report_pdf_markdown import parse_body
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "publications" / "2026-08-23" / "technical-report-en.md"
 OUTPUT = ROOT / "output" / "pdf" / "SPM-Polaris-Technical-Report-v1.0-2026-08-23.pdf"
+LOGO_URL = "https://docs.spmos.ai/assets/orbit-light-transparent.png"
+LOGO_SHA256 = "ff2dfef04166995bdf47013f7259a0158d0ae434aeaa97ef26918eff9db8227e"
+LOGO_CACHE = ROOT / "output" / "assets" / "orbit-light-transparent.png"
 PAGE_WIDTH, PAGE_HEIGHT = A4
 MARGIN_X = 18 * mm
 MARGIN_TOP = 19 * mm
@@ -219,6 +225,20 @@ def make_styles() -> dict[str, ParagraphStyle]:
 STYLES = make_styles()
 
 
+def official_logo_path() -> Path:
+    if LOGO_CACHE.exists() and hashlib.sha256(LOGO_CACHE.read_bytes()).hexdigest() == LOGO_SHA256:
+        return LOGO_CACHE
+    request = Request(LOGO_URL, headers={"User-Agent": "SPMOS technical report builder/1.0"})
+    with urlopen(request, timeout=20) as response:
+        content = response.read()
+    digest = hashlib.sha256(content).hexdigest()
+    if digest != LOGO_SHA256:
+        raise RuntimeError(f"Official logo digest mismatch: {digest}")
+    LOGO_CACHE.parent.mkdir(parents=True, exist_ok=True)
+    LOGO_CACHE.write_bytes(content)
+    return LOGO_CACHE
+
+
 def page_chrome(canvas, doc) -> None:
     canvas.saveState()
     canvas.setTitle("SPM-Polaris: Evidence-Governed Memory and Context Management for Long-Horizon AI Agents")
@@ -261,7 +281,9 @@ def cover_story() -> list:
         )
     )
     return [
-        Spacer(1, 21 * mm),
+        Spacer(1, 5 * mm),
+        Image(str(official_logo_path()), width=48 * mm, height=(48 * 227 / 480) * mm, hAlign="LEFT"),
+        Spacer(1, 6 * mm),
         Paragraph("SPM · STELLARPATH MEMORY OPERATING SYSTEM", STYLES["cover_kicker"]),
         HRFlowable(width=30 * mm, thickness=3, color=BLUE, hAlign="LEFT", spaceAfter=15),
         Paragraph("SPM-Polaris: Evidence-Governed Memory and Context Management for Long-Horizon AI Agents", STYLES["cover_title"]),

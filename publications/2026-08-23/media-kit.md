@@ -73,35 +73,37 @@ Read *SPM-Polaris: Evidence-Governed Memory and Context Management for Long-Hori
 
 The report and current observations are first-party, not peer reviewed, and not independently reproduced. They are not an SLA, compliance certification, or universal performance guarantee.
 
-## X thread — English
+## X seven-day series — English
 
-**1/7**
+Publish these as seven standalone posts, one per day at 13:00 UTC (21:00 Asia/Shanghai). Do not publish them as a thread or include sequence numbering in the post text.
+
+**Day 1**
 
 A larger context window is not long-term memory. Agents still need rules for what becomes durable, which evidence may enter a request, what history can be removed safely, which provider state must be protected, and whether deletion actually completes.
 
-**2/7**
+**Day 2**
 
 SPM-Polaris separates candidate retrieval from evidence admission. Similar text is not automatically a fact. The final gate rechecks tenant, namespace, generation, source state, scope, and provenance. If nothing qualifies, it injects no memory.
 
-**3/7**
+**Day 3**
 
 Context reduction is a state-integrity problem. System/developer instructions, the latest task, tool linkage, Responses lineage, thinking state, multimodal blocks, and unknown provider fields may be protected. When safety is unproven, passthrough is correct.
 
-**4/7**
+**Day 4**
 
 Hosted Proxy, Local Proxy, and MCP share the hosted SPM memory plane but not the same boundary. They differ in credential custody, model traffic, automatic invocation, receipts, and operating responsibility. Integration path belongs in every benchmark.
 
-**5/7**
+**Day 5**
 
 One eligible Hosted Provider Proxy request went from 66,265 original input tokens to 365 forwarded, with 279 recalled. This is one first-party observation—not an average, SLA, or promise that every request saves tokens. Short or protected histories may show 0%.
 
-**6/7**
+**Day 6**
 
 Current limits matter: no current public production-near accuracy anchor, no p99 or sustained-soak evidence, no claim of Proxy/MCP equivalence, and no compliance certification. Historical comparison figures remain withdrawn until a reproducible immutable rerun exists.
 
-**7/7**
+**Day 7**
 
-Our technical report describes evidence admission, protected context compilation, credential boundaries, deletion, current observations, and the evaluation work still needed. First-party report by Veridical Tech, Inc.: https://docs.spmos.ai/technical-report
+Our technical report describes evidence admission, protected context compilation, credential boundaries, deletion, current observations, and the evaluation work still needed. First-party report by Veridical Tech, Inc.: https://docs.spmos.ai/technical-report?utm_source=x
 
 ## Reddit profile post
 

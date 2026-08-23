@@ -8,6 +8,71 @@
 
 **Language scope:** Use this kit only for international channels, and publish every title, description, metadata field, and post in English. Chinese-market copy is maintained separately in [`media-kit-zh-CN.md`](media-kit-zh-CN.md).
 
+## Official profile copy — English
+
+### X biography
+
+Governed long-term memory for AI agents. Evidence-gated recall, protected context compilation, and auditable request receipts. Official: SPMOS.ai
+
+### Reddit profile description
+
+Official SPMOS.ai account. SPM (StellarPath Memory Operating System) is the product family; SPM-Polaris is the current provider proxy with governed long-term memory for AI agents.
+
+### YouTube channel description
+
+SPM is StellarPath Memory Operating System, the governed long-term memory product family for AI agents developed by Veridical Tech, Inc. SPM-Polaris is the current production provider proxy. We publish first-party architecture, integration, evidence, benchmark-boundary, and release information.
+
+Official website: https://spmos.ai/
+
+Technical documentation: https://docs.spmos.ai/
+
+Technical report: https://docs.spmos.ai/technical-report
+
+### Hugging Face organization summary
+
+Governed long-term memory for AI agents. Evidence-gated recall, protected context compilation, and auditable request receipts. Official: SPMOS.ai
+
+## GitHub release — English
+
+**Release title**
+
+SPM-Polaris Technical Report v1.0
+
+**Release notes**
+
+This release publishes *SPM-Polaris: Evidence-Governed Memory and Context Management for Long-Horizon AI Agents*, Version 1.0.
+
+The first-party technical report describes evidence admission, protected context compilation, Hosted Provider Proxy, Local Proxy, MCP, credential boundaries, deletion, current bounded observations, limitations, and the next evaluation agenda.
+
+- Publication date and evidence cutoff: August 23, 2026
+- Author and publisher: Veridical Tech, Inc.
+- Canonical web edition: https://docs.spmos.ai/technical-report
+- Versioned source bundle: https://github.com/VeridicalTech/spmos-official/tree/technical-report-v1.0/publications/2026-08-23
+- Status: not peer reviewed or independently evaluated
+
+The attached PDF is the English international edition. A Chinese-language source edition is maintained in the versioned source bundle for Chinese media channels.
+
+## Hugging Face organization card — English
+
+# SPM — StellarPath Memory Operating System
+
+This is the official Hugging Face organization for **SPM**, the StellarPath Memory Operating System product family developed by **Veridical Tech, Inc.**
+
+**SPMOS.ai** is the official website and canonical public source. **SPM-Polaris V3.0.0** is the current production product: a provider proxy with governed long-term memory for AI agents.
+
+SPM-Polaris separates candidate retrieval from evidence admission, protects provider-native state during context reduction, and can refuse unsupported memory. Hosted Provider Proxy, Local Proxy, and MCP use the hosted SPM memory plane but have different credential, traffic, invocation, receipt, and operating boundaries.
+
+## Technical report
+
+Read *SPM-Polaris: Evidence-Governed Memory and Context Management for Long-Horizon AI Agents*, Version 1.0:
+
+- Canonical report: https://docs.spmos.ai/technical-report
+- Versioned sources: https://github.com/VeridicalTech/spmos-official/tree/technical-report-v1.0/publications/2026-08-23
+- Official definitions: https://docs.spmos.ai/official-definitions
+- Benchmarks and limitations: https://docs.spmos.ai/benchmarks
+
+The report and current observations are first-party, not peer reviewed, and not independently reproduced. They are not an SLA, compliance certification, or universal performance guarantee.
+
 ## X thread — English
 
 **1/7**

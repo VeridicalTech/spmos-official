@@ -20,7 +20,10 @@ This map identifies the maintained first-party sources for SPM, SPMOS.ai, and SP
 - MCP server: https://docs.spmos.ai/mcp
 - Security: https://docs.spmos.ai/security
 - Benchmarks and limitations: https://docs.spmos.ai/benchmarks
+- Technical report v1.0: https://docs.spmos.ai/technical-report
 - Changelog: https://docs.spmos.ai/changelog
+
+Versioned report sources, citation metadata, and channel-ready English and Chinese media copy are maintained at https://github.com/VeridicalTech/spmos-official/tree/main/publications/2026-08-23.
 
 ## Open-source component
 

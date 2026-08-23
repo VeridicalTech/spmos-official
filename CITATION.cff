@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you cite this technical report, use the following metadata."
+title: "SPM-Polaris: Evidence-Governed Memory and Context Management for Long-Horizon AI Agents"
+type: report
+version: "1.0"
+date-released: 2026-08-23
+authors:
+  - name: "Veridical Tech, Inc."
+publisher:
+  name: "Veridical Tech, Inc."
+url: "https://docs.spmos.ai/technical-report"
+repository-code: "https://github.com/VeridicalTech/spmos-official"
+abstract: >-
+  A first-party technical report describing SPM-Polaris V3.0.0 evidence
+  admission, protected context compilation, integration boundaries,
+  deletion, bounded production observations, limitations, and evaluation agenda.
+keywords:
+  - agent memory
+  - LLM memory
+  - long-term memory
+  - context management
+  - evidence provenance
+  - Model Context Protocol

@@ -32,7 +32,18 @@ For SPM-Polaris V3.0.0, the memory path adds no generative LLM call. Dedicated e
 - https://docs.spmos.ai/integrations
 - https://docs.spmos.ai/memory
 - https://docs.spmos.ai/benchmarks
+- https://docs.spmos.ai/technical-report
 - https://github.com/VeridicalTech/spm-local-proxy
+
+## Technical publication
+
+- Title: SPM-Polaris: Evidence-Governed Memory and Context Management for Long-Horizon AI Agents
+- Version: 1.0
+- Publication date and evidence cutoff: 2026-08-23
+- Publisher: Veridical Tech, Inc.
+- Canonical report: https://docs.spmos.ai/technical-report
+- Versioned sources: https://github.com/VeridicalTech/spmos-official/tree/main/publications/2026-08-23
+- Status: First-party technical report; not peer reviewed or independently evaluated.
 
 ## Citation rule
 

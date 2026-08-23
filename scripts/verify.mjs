@@ -11,12 +11,18 @@ const requiredFiles = [
   "SECURITY.md",
   "SUPPORT.md",
   "NOTICE.md",
+  "CITATION.cff",
   "locales/zh-CN.md",
   "locales/ja.md",
   "locales/fr.md",
   "locales/es.md",
   "locales/de.md",
   "locales/ko.md",
+  "publications/2026-08-23/README.md",
+  "publications/2026-08-23/technical-report-en.md",
+  "publications/2026-08-23/technical-report-zh-CN.md",
+  "publications/2026-08-23/media-kit.md",
+  "publications/2026-08-23/media-kit-zh-CN.md",
 ];
 
 for (const file of requiredFiles) await access(path.join(root, file));
@@ -74,6 +80,40 @@ for (const term of prohibited) {
 }
 
 assert(!publicText.includes("SPM-Core"), "SPM-Core must remain outside this public surface");
+
+const publicationRoot = path.join(root, "publications/2026-08-23");
+const englishReport = await readFile(path.join(publicationRoot, "technical-report-en.md"), "utf8");
+const internationalKit = await readFile(path.join(publicationRoot, "media-kit.md"), "utf8");
+const chineseKit = await readFile(path.join(publicationRoot, "media-kit-zh-CN.md"), "utf8");
+const citation = await readFile(path.join(root, "CITATION.cff"), "utf8");
+
+for (const [label, text] of [
+  ["English report", englishReport],
+  ["international media kit", internationalKit],
+]) {
+  assert(!/[\u3400-\u9fff]/u.test(text), `${label} must remain English-only`);
+}
+
+assert(internationalKit.includes("Language: English"), "Zenodo metadata must declare English");
+assert(chineseKit.includes("知乎文章"), "Chinese media kit must include Zhihu copy");
+assert(chineseKit.includes("中国媒体"), "Chinese media kit language scope is missing");
+assert(
+  englishReport.includes("not peer reviewed or independently evaluated"),
+  "English report must disclose first-party review status",
+);
+assert(citation.includes('name: "Veridical Tech, Inc."'), "Citation publisher is missing");
+assert(citation.includes('url: "https://docs.spmos.ai/technical-report"'), "Citation canonical URL is missing");
+
+const withdrawnNumericPatterns = [
+  /99\.7\s*%/i,
+  /99\.507\s*%/i,
+  /(?:^|\D)8\.4\s*x/i,
+  /67\.9\s*(?:-|–|to)\s*69\.2\s*%/i,
+  /74\.1\s*%/i,
+];
+for (const pattern of withdrawnNumericPatterns) {
+  assert(!pattern.test(publicText), `Withdrawn historical metric remains public: ${pattern}`);
+}
 
 for (const file of requiredFiles.filter((candidate) => candidate.endsWith(".md"))) {
   const markdown = await readFile(path.join(root, file), "utf8");

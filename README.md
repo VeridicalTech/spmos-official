@@ -57,12 +57,19 @@ People may describe the same problem as LLM memory, long-term AI memory, a memor
 - [Integration comparison](https://docs.spmos.ai/integrations)
 - [Memory, evidence, and deletion](https://docs.spmos.ai/memory)
 - [Benchmarks and limitations](https://docs.spmos.ai/benchmarks)
+- [SPM-Polaris technical report v1.0](https://docs.spmos.ai/technical-report)
 - [Privacy policy](https://docs.spmos.ai/privacy)
 - [Terms of service](https://docs.spmos.ai/terms)
 
 The open-source [SPM Local Proxy](https://github.com/VeridicalTech/spm-local-proxy) is a local credential and provider-forwarding boundary. It is not an offline or self-hosted edition of the SPM memory plane.
 
 See [OFFICIAL-SOURCES.md](OFFICIAL-SOURCES.md) for the maintained verification map and official channels.
+
+## Technical publication
+
+The August 23, 2026 [SPM-Polaris technical report](https://docs.spmos.ai/technical-report) describes evidence admission, protected context compilation, integration boundaries, deletion, bounded first-party observations, limitations, and the next evaluation agenda. Versioned English and Chinese source editions, citation metadata, and channel-specific media copy are maintained in [`publications/2026-08-23`](publications/2026-08-23/README.md).
+
+The report is a first-party technical communication by Veridical Tech, Inc. It is not peer reviewed or independently evaluated. International media use the English edition; Chinese media use the Chinese edition.
 
 ## Publisher
 

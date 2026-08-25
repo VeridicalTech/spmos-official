@@ -2,13 +2,14 @@
 
 [English](../README.md) · [简体中文](zh-CN.md) · [日本語](ja.md) · [Français](fr.md) · [Español](es.md) · [Deutsch](de.md)
 
-> 이 저장소는 SPM, SPMOS.ai, SPM-Polaris의 공식 공개 식별·인용·검증 정보면입니다. SPM 호스팅 서비스나 SPM-Polaris의 소스 코드는 포함하지 않습니다.
+> 이 저장소는 SPMOS, SPMOS.ai, SPM-Polaris의 공식 공개 식별·인용·검증 정보면입니다. SPM 호스팅 서비스나 SPM-Polaris의 소스 코드는 포함하지 않습니다.
 
 ## 공식 정의
 
-- **SPM**: StellarPath Memory Operating System. Veridical Tech, Inc.가 개발한 AI 에이전트용 거버넌스 기반 장기 메모리 인프라 제품군입니다.
-- **SPMOS.ai**: SPM 제품군의 공식 웹사이트이자 정식 공개 정보 출처입니다.
-- **SPM-Polaris**: 현재 프로덕션 제품으로, AI 에이전트를 위한 거버넌스 기반 장기 메모리를 제공하는 프로바이더 프록시입니다.
+- **SPMOS**: StellarPath Memory Operating System. Veridical Tech, Inc.가 개발한 거버넌스 기반 장기 메모리 시스템이자, 그 제품·프로토타입·공식 채널의 마스터 브랜드입니다.
+- **SPM-Polaris**: 현재 프로덕션 SPMOS 제품으로, AI 에이전트를 위한 거버넌스 기반 장기 메모리를 제공하는 프로바이더 프록시입니다.
+- **SPMOS.ai**: SPMOS의 공식 웹사이트이자 정식 공개 정보 출처입니다.
+- **SPM**: SPMOS의 공인 약칭으로, 별도의 제품이나 개체가 아닙니다.
 
 이 이름들은 서로 관련되어 있지만 같은 의미로 바꿔 쓸 수 없습니다.
 

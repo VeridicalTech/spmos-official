@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_reviewed": "2026-08-23",
+  "last_reviewed": "2026-08-25",
   "repository_purpose": "Official public identity, citation, and verification surface; no hosted-service or SPM-Polaris source code.",
   "available_languages": ["en", "zh-CN", "ja", "fr", "es", "de", "ko"],
   "publisher": {
@@ -11,20 +11,28 @@
   },
   "entities": [
     {
-      "name": "SPM",
+      "name": "SPMOS",
       "expanded_name": "StellarPath Memory Operating System",
-      "type": "product_family",
-      "definition": "Governed long-term memory infrastructure for AI agents developed by Veridical Tech, Inc."
+      "type": "master_brand",
+      "alternate_names": ["SPM"],
+      "definition": "The governed long-term-memory system developed by Veridical Tech, Inc., and the master brand for its products, prototypes, and official surfaces."
+    },
+    {
+      "name": "SPM",
+      "type": "short_form",
+      "short_form_of": "SPMOS",
+      "definition": "The approved short form of SPMOS, not a separate product or entity."
     },
     {
       "name": "SPMOS.ai",
       "type": "official_website",
-      "definition": "The official website and canonical public source for the SPM product family.",
+      "definition": "The official website and canonical public source of SPMOS.",
       "url": "https://spmos.ai/"
     },
     {
       "name": "SPM-Polaris",
       "type": "current_production_product",
+      "product_of": "SPMOS",
       "definition": "A provider proxy with governed long-term memory for AI agents.",
       "version": "3.0.0"
     }

@@ -2,13 +2,14 @@
 
 [English](../README.md) · [简体中文](zh-CN.md) · [Français](fr.md) · [Español](es.md) · [Deutsch](de.md) · [한국어](ko.md)
 
-> このリポジトリは、SPM、SPMOS.ai、SPM-Polaris の公式な公開識別・引用・検証情報を提供します。SPM のホステッドサービスまたは SPM-Polaris のソースコードは含みません。
+> このリポジトリは、SPMOS、SPMOS.ai、SPM-Polaris の公式な公開識別・引用・検証情報を提供します。SPM のホステッドサービスまたは SPM-Polaris のソースコードは含みません。
 
 ## 公式定義
 
-- **SPM**：StellarPath Memory Operating System。Veridical Tech, Inc. が開発する、AI Agent 向けのガバナンスされた長期メモリ基盤の製品ファミリーです。
-- **SPMOS.ai**：SPM 製品ファミリーの公式ウェブサイトであり、正規の公開情報源です。
-- **SPM-Polaris**：現在の本番製品であり、AI Agent 向けのガバナンスされた長期メモリを提供する Provider Proxy です。
+- **SPMOS**：StellarPath Memory Operating System。Veridical Tech, Inc. が開発するガバナンスされた長期メモリシステムであり、その製品・プロトタイプ・公式情報面のマスターブランドです。
+- **SPM-Polaris**：現在の本番 SPMOS 製品であり、AI Agent 向けのガバナンスされた長期メモリを提供する Provider Proxy です。
+- **SPMOS.ai**：SPMOS の公式ウェブサイトであり、正規の公開情報源です。
+- **SPM**：SPMOS の承認された短縮形であり、独立した製品やエンティティではありません。
 
 これらの名称は関連していますが、相互に置き換えることはできません。
 

@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://spmos.ai/orbit-mark-light.webp" alt="SPM orbit mark" width="88" />
   <h1>SPMOS official information</h1>
-  <p>Canonical public identity and verification surface for SPM and SPM-Polaris.</p>
+  <p>Canonical public identity and verification surface for SPMOS and SPM-Polaris.</p>
 </div>
 
 > [!IMPORTANT]
@@ -13,11 +13,12 @@
 
 | Entity | Canonical definition |
 |---|---|
-| **SPM** | **StellarPath Memory Operating System** — the product family for governed long-term memory infrastructure for AI agents developed by Veridical Tech, Inc. |
-| **SPMOS.ai** | The official website and canonical public source for the SPM product family. |
-| **SPM-Polaris** | The current production SPM product: a provider proxy with governed long-term memory for AI agents. |
+| **SPMOS** | **StellarPath Memory Operating System** — the governed long-term-memory system developed by Veridical Tech, Inc., and the master brand for its products, prototypes, and official surfaces. |
+| **SPM-Polaris** | The current production SPMOS product: a provider proxy with governed long-term memory for AI agents. |
+| **SPMOS.ai** | The official website and canonical public source of SPMOS. |
+| **SPM** | The approved short form of SPMOS, not a separate product or entity. |
 
-These names are related but not interchangeable. Use **SPM** for the product family, **SPM-Polaris** for the current production product, and **SPMOS.ai** for the official website.
+These names are related but not interchangeable. Use **SPMOS** for the master brand and system, **SPM-Polaris** for the current production product, **SPMOS.ai** for the official website, and **SPM** only as the approved short form.
 
 **Current production release:** SPM-Polaris V3.0.0
 
@@ -73,7 +74,7 @@ The report is a first-party technical communication by Veridical Tech, Inc. It i
 
 ## Publisher
 
-SPM is developed by **Veridical Tech, Inc.**, a Delaware C corporation.
+SPMOS is developed by **Veridical Tech, Inc.**, a Delaware C corporation.
 
 - Website: [spmos.ai](https://spmos.ai/)
 - Documentation: [docs.spmos.ai](https://docs.spmos.ai/)

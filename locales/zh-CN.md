@@ -2,13 +2,14 @@
 
 [English](../README.md) · [日本語](ja.md) · [Français](fr.md) · [Español](es.md) · [Deutsch](de.md) · [한국어](ko.md)
 
-> 本仓库是 SPM、SPMOS.ai 与 SPM-Polaris 的官方公开身份、引用和核验信息面，不包含 SPM 托管服务或 SPM-Polaris 的源代码。
+> 本仓库是 SPMOS、SPMOS.ai 与 SPM-Polaris 的官方公开身份、引用和核验信息面，不包含 SPM 托管服务或 SPM-Polaris 的源代码。
 
 ## 官方定义
 
-- **SPM**：StellarPath Memory Operating System（星径记忆操作系统）产品家族，由 Veridical Tech, Inc. 开发，面向 AI Agent 提供受治理的长期记忆基础设施。
-- **SPMOS.ai**：SPM 产品家族的官方网站与规范公开信息源。
-- **SPM-Polaris**：当前生产产品，是面向 AI Agent、具有受治理长期记忆能力的 Provider Proxy。
+- **SPMOS**：StellarPath Memory Operating System（星径记忆操作系统），由 Veridical Tech, Inc. 开发的受治理长期记忆系统，是其产品、原型与官方信息面的主品牌。
+- **SPM-Polaris**：当前生产 SPMOS 产品，是面向 AI Agent、具有受治理长期记忆能力的 Provider Proxy。
+- **SPMOS.ai**：SPMOS 的官方网站与规范公开信息源。
+- **SPM**：SPMOS 的核准简写，不是独立产品或实体。
 
 这些名称相互关联，但不能互换使用。
 

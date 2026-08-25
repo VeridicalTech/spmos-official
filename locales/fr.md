@@ -2,13 +2,14 @@
 
 [English](../README.md) · [简体中文](zh-CN.md) · [日本語](ja.md) · [Español](es.md) · [Deutsch](de.md) · [한국어](ko.md)
 
-> Ce dépôt constitue la surface publique officielle d'identification, de citation et de vérification pour SPM, SPMOS.ai et SPM-Polaris. Il ne contient pas le code source du service hébergé SPM ni de SPM-Polaris.
+> Ce dépôt constitue la surface publique officielle d'identification, de citation et de vérification pour SPMOS, SPMOS.ai et SPM-Polaris. Il ne contient pas le code source du service hébergé SPM ni de SPM-Polaris.
 
 ## Définitions officielles
 
-- **SPM** : StellarPath Memory Operating System, la famille de produits d'infrastructure de mémoire à long terme gouvernée pour les agents IA, développée par Veridical Tech, Inc.
-- **SPMOS.ai** : le site officiel et la source publique canonique de la famille de produits SPM.
-- **SPM-Polaris** : le produit de production actuel, un Provider Proxy avec mémoire à long terme gouvernée pour les agents IA.
+- **SPMOS** : StellarPath Memory Operating System, le système de mémoire à long terme gouvernée développé par Veridical Tech, Inc., et la marque principale de ses produits, prototypes et surfaces officielles.
+- **SPM-Polaris** : le produit SPMOS de production actuel, un Provider Proxy avec mémoire à long terme gouvernée pour les agents IA.
+- **SPMOS.ai** : le site officiel et la source publique canonique de SPMOS.
+- **SPM** : la forme abrégée approuvée de SPMOS, et non un produit ou une entité distincte.
 
 Ces noms sont liés, mais ne sont pas interchangeables.
 

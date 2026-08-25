@@ -60,9 +60,13 @@ assert(facts.publisher.name === "Veridical Tech, Inc.", "Publisher mismatch");
 assert(facts.available_languages.length === 7, "Public language list mismatch");
 assert(
   facts.entities.some(
-    (entity) => entity.name === "SPM" && entity.expanded_name === "StellarPath Memory Operating System",
+    (entity) => entity.name === "SPMOS" && entity.expanded_name === "StellarPath Memory Operating System",
   ),
-  "SPM expansion mismatch",
+  "SPMOS expansion mismatch",
+);
+assert(
+  facts.entities.some((entity) => entity.name === "SPM" && entity.short_form_of === "SPMOS"),
+  "SPM short-form mismatch",
 );
 assert(
   facts.entities.some((entity) => entity.name === "SPM-Polaris" && entity.version === "3.0.0"),

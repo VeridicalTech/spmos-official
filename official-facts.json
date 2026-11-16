@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_reviewed": "2026-08-25",
+  "last_reviewed": "2026-11-17",
   "repository_purpose": "Official public identity, citation, and verification surface; no hosted-service or SPM-Polaris source code.",
   "available_languages": ["en", "zh-CN", "ja", "fr", "es", "de", "ko"],
   "publisher": {

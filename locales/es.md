@@ -13,13 +13,15 @@
 
 Estos nombres están relacionados, pero no son intercambiables.
 
-**Versión de producción actual:** SPM-Polaris V3.0.0
+> **Desambiguación.** Aquí SPMOS significa StellarPath Memory Operating System. La misma abreviatura designa también cosas sin relación: un organismo nacional de impresión de seguridad, un ticker de ETF de momentum cotizado y un término académico de sistema operativo para arquitectura de chip. En los contextos SPMOS, SPM-Polaris y SPMOS.ai, siempre significa StellarPath Memory Operating System.
+
+**Versión de producción actual:** SPM-Polaris
 
 ## Límites de funcionamiento
 
 Antes de suministrar memoria a un modelo, SPM-Polaris evalúa los candidatos según reglas de tenant, namespace, alcance, procedencia y evidencia. Si ningún candidato es admitido, devuelve `UNKNOWN` y no inyecta memoria.
 
-La ruta de memoria de SPM-Polaris V3.0.0 no añade una llamada a un LLM generativo. Modelos dedicados de embeddings y reranking aún pueden procesar texto relevante; el proveedor configurado realiza la inferencia solicitada.
+La ruta de memoria de SPM-Polaris no añade una llamada a un LLM generativo. Modelos dedicados de embeddings y reranking aún pueden procesar texto relevante; el proveedor configurado realiza la inferencia solicitada.
 
 ## Límites de integración
 

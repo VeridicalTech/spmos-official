@@ -32,9 +32,9 @@ const llms = await readFile(path.join(root, "llms.txt"), "utf8");
 const facts = JSON.parse(await readFile(path.join(root, "official-facts.json"), "utf8"));
 const publicText = (
   await Promise.all(
-    requiredFiles
-      .filter((file) => file.endsWith(".md") || file.endsWith(".txt"))
-      .map((file) => readFile(path.join(root, file), "utf8")),
+    // Every required file is part of the public surface, including
+    // non-Markdown ones such as CITATION.cff and official-facts.json.
+    requiredFiles.map((file) => readFile(path.join(root, file), "utf8")),
   )
 ).join("\n");
 
@@ -47,13 +47,26 @@ for (const text of [readme, llms]) {
     "StellarPath Memory Operating System",
     "SPMOS.ai",
     "SPM-Polaris",
-    "SPM-Polaris V3.0.0",
     "https://spmos.ai/",
     "https://docs.spmos.ai/official-definitions",
   ]) {
     assert(text.includes(required), `Missing required identity text: ${required}`);
   }
+  // The owner retired the public V3.0.0 marker on 2026-09-16 because the
+  // version number had no grounded basis. The public surface must state
+  // that the abbreviation is ambiguous.
+  assert(
+    text.includes("Disambiguation"),
+    "Public identity surface must disambiguate the SPMOS abbreviation",
+  );
 }
+
+// The retired V3.0.0 marker must not reappear anywhere in the public
+// surface, including the dated publication bundle.
+assert(
+  !publicText.includes("V3.0.0"),
+  "Retired V3.0.0 marker must not reappear in the public surface",
+);
 
 assert(facts.schema_version === 1, "Unsupported facts schema");
 assert(facts.publisher.name === "Veridical Tech, Inc.", "Publisher mismatch");
@@ -69,8 +82,14 @@ assert(
   "SPM short-form mismatch",
 );
 assert(
-  facts.entities.some((entity) => entity.name === "SPM-Polaris" && entity.version === "3.0.0"),
-  "Current product version mismatch",
+  facts.entities.some(
+    (entity) => entity.name === "SPM-Polaris" && entity.version === undefined,
+  ),
+  "Current product must not carry a retired version marker",
+);
+assert(
+  facts.disambiguation?.term === "SPMOS" && facts.disambiguation?.expansion === "StellarPath Memory Operating System",
+  "Facts file must carry the SPMOS disambiguation record",
 );
 
 const prohibited = [

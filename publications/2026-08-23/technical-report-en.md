@@ -7,7 +7,9 @@
 **Contact:** contact@spmos.ai<br>
 **Status:** First-party technical report; not peer reviewed or independently evaluated
 
-> This report describes the public behavior and evidence boundaries of SPM-Polaris V3.0.0. It is not an SLA, compliance certification, legal opinion, investment memorandum, or universal performance guarantee.
+> This report describes the public behavior and evidence boundaries of SPM-Polaris. It is not an SLA, compliance certification, legal opinion, investment memorandum, or universal performance guarantee.
+
+> **Editorial update — November 18, 2026:** Product naming only. On September 16, 2026 the owner retired the public product version marker because the version number had no grounded basis; this edition therefore names the current production product SPM-Polaris without a version marker. No observation, measurement, evidence boundary, or evidence cutoff in this report changed. A later editorial edition of this report is published at https://docs.spmos.ai/technical-report.
 
 ## Abstract
 
@@ -38,7 +40,7 @@ Long-term memory = governed state maintained across requests and time
 
 ## 2. System scope
 
-SPM means StellarPath Memory Operating System, the product family developed by Veridical Tech, Inc. SPM-Polaris V3.0.0 is the current production product.
+SPM means StellarPath Memory Operating System, the product family developed by Veridical Tech, Inc. SPM-Polaris is the current production product. The abbreviation SPMOS is also used for unrelated things — a national security printing organization, a listed momentum ETF ticker, and an academic chip-architecture operating system; in SPMOS, SPM-Polaris, and SPMOS.ai contexts it always means StellarPath Memory Operating System.
 
 SPM-Polaris is not:
 

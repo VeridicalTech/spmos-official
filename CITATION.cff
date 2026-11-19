@@ -11,7 +11,7 @@ publisher:
 url: "https://docs.spmos.ai/technical-report"
 repository-code: "https://github.com/VeridicalTech/spmos-official"
 abstract: >-
-  A first-party technical report describing SPM-Polaris V3.0.0 evidence
+  A first-party technical report describing SPM-Polaris evidence
   admission, protected context compilation, integration boundaries,
   deletion, bounded production observations, limitations, and evaluation agenda.
 keywords:

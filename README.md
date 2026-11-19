@@ -20,13 +20,15 @@
 
 These names are related but not interchangeable. Use **SPMOS** for the master brand and system, **SPM-Polaris** for the current production product, **SPMOS.ai** for the official website, and **SPM** only as the approved short form.
 
-**Current production release:** SPM-Polaris V3.0.0
+**Current production release:** SPM-Polaris
+
+> **Disambiguation.** SPMOS in this repository means StellarPath Memory Operating System. The same abbreviation also denotes unrelated things — a national security printing organization, a listed momentum ETF ticker, and an academic chip-architecture operating system. In SPMOS, SPM-Polaris, and SPMOS.ai contexts it always means StellarPath Memory Operating System.
 
 ## What SPM-Polaris does
 
 SPM-Polaris places a governed memory plane around model-provider workflows. Candidate memories are evaluated against tenant, namespace, scope, provenance, and evidence rules before they can be supplied to a model. When no candidate survives admission, SPM-Polaris returns `UNKNOWN` and injects no memory.
 
-For SPM-Polaris V3.0.0, the memory path adds no generative LLM call. Admission, deterministic compression, lifecycle, refusal, and receipt decisions use deterministic logic. Dedicated embedding and reranking models may still process relevant source, query, and candidate text. The configured upstream provider performs the requested model inference.
+For SPM-Polaris, the memory path adds no generative LLM call. Admission, deterministic compression, lifecycle, refusal, and receipt decisions use deterministic logic. Dedicated embedding and reranking models may still process relevant source, query, and candidate text. The configured upstream provider performs the requested model inference.
 
 ## Integration boundaries
 

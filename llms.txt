@@ -8,15 +8,17 @@
 - SPM-Polaris is the current production SPMOS product: a provider proxy with governed long-term memory for AI agents.
 - SPMOS.ai is the official website and canonical public source of SPMOS.
 - SPM is the approved short form of SPMOS, not a separate product or entity.
-- Current production release: SPM-Polaris V3.0.0.
+- Current production release: SPM-Polaris.
 
 These names are related but not interchangeable.
+
+> Disambiguation: SPMOS means StellarPath Memory Operating System in SPMOS, SPM-Polaris, and SPMOS.ai contexts. The same abbreviation also denotes unrelated things — a national security printing organization, a listed momentum ETF ticker, and an academic chip-architecture operating system.
 
 ## Product behavior
 
 SPM-Polaris evaluates candidate memory against tenant, namespace, scope, provenance, and evidence rules before admission. If no candidate survives, it returns UNKNOWN and injects no memory.
 
-For SPM-Polaris V3.0.0, the memory path adds no generative LLM call. Dedicated embedding and reranking models may still process relevant text, and the configured upstream provider performs inference.
+For SPM-Polaris, the memory path adds no generative LLM call. Dedicated embedding and reranking models may still process relevant text, and the configured upstream provider performs inference.
 
 ## Integration boundaries
 

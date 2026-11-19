@@ -7,7 +7,9 @@
 **联系邮箱：** contact@spmos.ai<br>
 **状态：** 第一方技术报告；未经同行评审或第三方独立评估
 
-> 本报告描述 SPM-Polaris V3.0.0 的公开行为与证据边界。它不是 SLA、合规认证、法律意见、融资材料或普遍性能保证。
+> 本报告描述 SPM-Polaris 的公开行为与证据边界。它不是 SLA、合规认证、法律意见、融资材料或普遍性能保证。
+
+> **编辑更新 —— 2026 年 11 月 18 日：** 仅涉及产品命名。2026 年 9 月 16 日，owner 撤下了公开的产品版本标记，因为该版本号缺乏依据；本版因此只以产品名 SPM-Polaris 指称当前生产产品，不带版本号。本报告中的任何观察、测量、证据边界与证据截止时间均未改变。本报告的更新版发布于 https://docs.spmos.ai/technical-report。
 
 ## 摘要
 
@@ -38,7 +40,7 @@ SPM-Polaris 是当前 SPM 产品：一个面向 AI Agent、带治理长期记忆
 
 ## 2. 系统范围
 
-SPM 是 StellarPath Memory Operating System，由 Veridical Tech, Inc. 开发的产品家族。SPM-Polaris V3.0.0 是当前生产产品。
+SPM 是 StellarPath Memory Operating System，由 Veridical Tech, Inc. 开发的产品家族。SPM-Polaris 是当前生产产品。缩写 SPMOS 在其他语境下另有所指——国家安全印钞机构、某上市动量 ETF 代码，以及学术界的芯片架构操作系统术语；在 SPMOS、SPM-Polaris 与 SPMOS.ai 的语境中，它始终指 StellarPath Memory Operating System。
 
 SPM-Polaris 不是：
 

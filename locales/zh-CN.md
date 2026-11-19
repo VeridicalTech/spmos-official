@@ -13,13 +13,15 @@
 
 这些名称相互关联，但不能互换使用。
 
-**当前生产版本：** SPM-Polaris V3.0.0
+> **消歧。** 本文中的 SPMOS 指 StellarPath Memory Operating System（星径记忆操作系统）。同一缩写在其他语境下另有所指——例如国家安全印钞机构、某上市动量 ETF 代码，以及学术界的芯片架构操作系统术语。在 SPMOS、SPM-Polaris 与 SPMOS.ai 的语境中，它始终指 StellarPath Memory Operating System。
+
+**当前生产版本：** SPM-Polaris
 
 ## 工作边界
 
 SPM-Polaris 会在记忆进入模型之前，根据租户、命名空间、作用域、来源链和证据规则评估候选记忆。如果没有候选通过，系统返回 `UNKNOWN`，并且不注入记忆。
 
-SPM-Polaris V3.0.0 的记忆路径不会额外调用生成式 LLM。专用嵌入和重排模型仍可能处理相关文本，最终推理由用户配置的上游模型供应商完成。
+SPM-Polaris 的记忆路径不会额外调用生成式 LLM。专用嵌入和重排模型仍可能处理相关文本，最终推理由用户配置的上游模型供应商完成。
 
 ## 三种集成方式
 

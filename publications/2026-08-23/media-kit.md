@@ -58,7 +58,7 @@ The attached PDF is the English international edition. A Chinese-language source
 
 This is the official Hugging Face organization for **SPM**, the StellarPath Memory Operating System product family developed by **Veridical Tech, Inc.**
 
-**SPMOS.ai** is the official website and canonical public source. **SPM-Polaris V3.0.0** is the current production product: a provider proxy with governed long-term memory for AI agents.
+**SPMOS.ai** is the official website and canonical public source. **SPM-Polaris** is the current production product: a provider proxy with governed long-term memory for AI agents. Here SPMOS means StellarPath Memory Operating System; the same abbreviation is also used for unrelated things — a national security printing organization, a listed momentum ETF ticker, and an academic chip-architecture operating system.
 
 SPM-Polaris separates candidate retrieval from evidence admission, protects provider-native state during context reduction, and can refuse unsupported memory. Hosted Provider Proxy, Local Proxy, and MCP use the hosted SPM memory plane but have different credential, traffic, invocation, receipt, and operating boundaries.
 

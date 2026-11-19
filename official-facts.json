@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_reviewed": "2026-11-17",
+  "last_reviewed": "2026-11-18",
   "repository_purpose": "Official public identity, citation, and verification surface; no hosted-service or SPM-Polaris source code.",
   "available_languages": ["en", "zh-CN", "ja", "fr", "es", "de", "ko"],
   "publisher": {
@@ -33,8 +33,13 @@
       "name": "SPM-Polaris",
       "type": "current_production_product",
       "product_of": "SPMOS",
-      "definition": "A provider proxy with governed long-term memory for AI agents.",
-      "version": "3.0.0"
+      "definition": "The current production SPMOS product: a provider proxy with governed long-term memory for AI agents."
+    },
+    {
+      "name": "SPMOS (disambiguation)",
+      "type": "disambiguation",
+      "definition": "SPMOS in this context means StellarPath Memory Operating System, the governed long-term-memory system developed by Veridical Tech, Inc. It does not refer to unrelated entities that share the same abbreviation, including a national security printing organization, a listed momentum ETF ticker, or an academic chip-architecture operating system.",
+      "applies_to": "https://spmos.ai/"
     }
   ],
   "integration_boundaries": [
@@ -81,5 +86,11 @@
     "External memory does not change a provider's maximum context window.",
     "Evidence gating can refuse unsupported memory but cannot guarantee an upstream model's generated answer.",
     "Local Proxy is not an offline or self-hosted edition of the SPM memory plane."
-  ]
+  ],
+  "disambiguation": {
+    "term": "SPMOS",
+    "expansion": "StellarPath Memory Operating System",
+    "note": "The abbreviation SPMOS also denotes unrelated things: a security printing organization, a momentum ETF ticker, and an academic chip-architecture term. In SPMOS, SPM-Polaris, and SPMOS.ai contexts it always means StellarPath Memory Operating System.",
+    "canonical_source": "https://docs.spmos.ai/official-definitions"
+  }
 }

@@ -54,20 +54,20 @@ The attached PDF is the English international edition. A Chinese-language source
 
 ## Hugging Face organization card — English
 
-# SPM — StellarPath Memory Operating System
+# SPMOS — StellarPath Memory Operating System
 
-This is the official Hugging Face organization for **SPM**, the StellarPath Memory Operating System product family developed by **Veridical Tech, Inc.**
+This is the official Hugging Face organization for **SPMOS** (StellarPath Memory Operating System), the governed long-term-memory system developed by **Veridical Tech, Inc.**
 
-**SPMOS.ai** is the official website and canonical public source. **SPM-Polaris** is the current production product: a provider proxy with governed long-term memory for AI agents. Here SPMOS means StellarPath Memory Operating System; the same abbreviation is also used for unrelated things — a national security printing organization, a listed momentum ETF ticker, and an academic chip-architecture operating system.
+**SPMOS.ai** is the official website and canonical public source. **SPM-Polaris** is the current production product: a provider proxy with governed long-term memory for AI agents. Here SPMOS means StellarPath Memory Operating System; the same abbreviation also denotes unrelated things — a national security printing organization, a listed momentum ETF ticker, and an academic chip-architecture operating system.
 
-SPM-Polaris separates candidate retrieval from evidence admission, protects provider-native state during context reduction, and can refuse unsupported memory. Hosted Provider Proxy, Local Proxy, and MCP use the hosted SPM memory plane but have different credential, traffic, invocation, receipt, and operating boundaries.
+SPM-Polaris separates candidate retrieval from evidence admission, protects provider-native state during context reduction, and can refuse unsupported memory. Hosted Provider Proxy, Local Proxy, and MCP use the hosted SPMOS memory plane but have different credential, traffic, invocation, receipt, and operating boundaries.
 
 ## Technical report
 
 Read *SPM-Polaris: Evidence-Governed Memory and Context Management for Long-Horizon AI Agents*, Version 1.0:
 
 - Canonical report: https://docs.spmos.ai/technical-report
-- Versioned sources: https://github.com/VeridicalTech/spmos-official/tree/technical-report-v1.0/publications/2026-08-23
+- Versioned sources, frozen 2026-08-23 edition: https://github.com/VeridicalTech/spmos-official/tree/technical-report-v1.0/publications/2026-08-23
 - Official definitions: https://docs.spmos.ai/official-definitions
 - Benchmarks and limitations: https://docs.spmos.ai/benchmarks
 
